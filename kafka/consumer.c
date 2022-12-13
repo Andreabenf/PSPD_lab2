@@ -26,7 +26,6 @@ palavras *contaPalavra(char *argp)
         char *aux = argp;
 
         char *palavra = malloc(sizeof(char) * MAX_CHAR);
-        int qtdPalavras = 0;
         palavras *contador = malloc(sizeof(palavras) * 4);
 
         contador[0].palavra = "Less than 6";
