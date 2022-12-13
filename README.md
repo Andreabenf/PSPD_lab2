@@ -20,6 +20,13 @@ Lucas Ganda Carvalho | 170039668 | lucasgandac
 Começamos ao instânciar o kafka através do Docker<br>
 `sudo docker compose up`
 
+`docker compose exec broker \
+  kafka-topics --create \
+    --topic words \
+    --bootstrap-server localhost:9092 \
+    --replication-factor 1 \
+    --partitions 1`
+
 ## 3 - Compile os arquivos
 Primeiro compile o consumidor <br>
 `make consumer`

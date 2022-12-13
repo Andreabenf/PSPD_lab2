@@ -20,7 +20,7 @@ static void dr_msg_cb (rd_kafka_t *kafka_handle,
 
 int main (int argc, char **argv) {
 
-    const char *topic = "purchases";
+    const char *topic = "words";
     rd_kafka_t *producer;
     rd_kafka_conf_t *conf;
     char errstr[512];
