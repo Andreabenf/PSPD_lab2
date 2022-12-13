@@ -61,7 +61,7 @@ int main (int argc, char **argv) {
 
     // Produce data by selecting random values from these lists.
     int message_count = 1;
-    FILE *file = fopen("./entrada.txt", "r");
+    FILE *file = fopen("../entrada.txt", "r");
         char *textFile1 = 0;
         long fileLength;
 
