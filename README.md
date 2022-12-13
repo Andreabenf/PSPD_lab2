@@ -17,7 +17,7 @@ Lucas Ganda Carvalho | 170039668 | lucasgandac
 - Docker
 
 ## 2 -  Instancie o Kafka
-Começamos ao instânciar o kafka através do Docker<br>
+Vá para a pasta 'kafka' e instancie o kafka através do Docker<br>
 `sudo docker compose up`
 
 `docker compose exec broker \
