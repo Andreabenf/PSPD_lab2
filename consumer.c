@@ -13,6 +13,8 @@ static void stop(int sig) {
 }
 
 
+#define MAX_CHAR 50
+
 typedef struct
 {
         char *palavra;

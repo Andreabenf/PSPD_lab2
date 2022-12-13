@@ -19,6 +19,8 @@ static void dr_msg_cb (rd_kafka_t *kafka_handle,
 
 
 int main (int argc, char **argv) {
+
+    const char *topic = "purchases";
     rd_kafka_t *producer;
     rd_kafka_conf_t *conf;
     char errstr[512];
@@ -100,7 +102,7 @@ int main (int argc, char **argv) {
             g_error("Failed to produce to topic %s: %s", topic, rd_kafka_err2str(err));
             return 1;
         } else {
-            g_message("Produced event to topic %s: key = %12s value = %12s", topic, key, value);
+            g_message("Produced event to topic %s: key = %12s value = %12s", topic, key, textFile1);
         }
 
         rd_kafka_poll(producer, 0);
