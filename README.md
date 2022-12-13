@@ -16,7 +16,7 @@ Lucas Ganda Carvalho | 170039668 | lucasgandac
 ### Outras dependências
 - Docker
 
-## 2 -  Instancie o Kafka
+## 2 -  Instancie o Kafka com 1 worker
 Vá para a pasta 'kafka' e instancie o kafka através do Docker<br>
 `sudo docker compose up -d`
 
@@ -38,4 +38,8 @@ Após isso consuma o produtor <br>
 `./consumer getting-started.ini`
 
 ## 5 - Execute o Consumidor
-`./producer getting-started.ini
+`./producer getting-started.ini`
+
+## 6 - Como comparativo, é possível também executar a versão em C normal.
+ `cd normal`
+`./prog`
